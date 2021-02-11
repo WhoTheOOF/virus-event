@@ -15,14 +15,14 @@ import enum
 
 from .utils import storage, formats
 
-GENERAL_ID = 706271127542038611
-SNAKE_PIT_ID = 706273466776813573
-TESTING_ID = 706301766832095312
-EVENT_ID = 808758712394055681
-INFECTED_ROLE_ID = 808745075701710858
-HEALER_ROLE_ID = 808745162364157982
-DISCORD_PY = 706271127542038608
-MOD_TESTING_ID = 568662293190148106
+GENERAL_ID = 741423419488206941
+SNAKE_PIT_ID = 745711043237380178
+TESTING_ID = 745711043237380178
+EVENT_ID = 809224743902248960
+INFECTED_ROLE_ID = 809224363248713738
+HEALER_ROLE_ID = 809224377547489320
+DISCORD_PY = 741423419488206939
+MOD_TESTING_ID = 782423774036754462
 MAX_ALLOWED_HEALS = 3
 MAX_VACCINE = 50
 VACCINE_MILESTONES = (5, 10, 15, 20, MAX_VACCINE)
@@ -234,7 +234,7 @@ class Participant:
 
     def heal(self, other):
         if self.is_dead():
-            raise VirusError('<:thonk:735191246435254273>')
+            raise VirusError('<:rooThink:783079969815265280>')
 
         if other.is_dead():
             raise VirusError("I'm afraid they're already dead.")
@@ -391,7 +391,7 @@ class VirusStorageHook(storage.StorageHook):
 
 
 class Virus(commands.Cog):
-    """The yourapps virus has spread and needs to be contained \N{FACE SCREAMING IN FEAR}
+    """The CactusKat virus has spread and needs to be contained \N{FACE SCREAMING IN FEAR}
 
     This is a cloned bot from the discord.py virus event, which you can find here: https://github.com/Rapptz/discord-event-bot
     Have fun!
@@ -709,7 +709,7 @@ class Virus(commands.Cog):
             f'{ping} is officially infected. Feel free to stay away from them and {total - 1} more.',
             f"Ya know, shaming someone for being sick isn't very nice. Protect {ping} and their {total - 1} friends.",
             f"Unfortunately {ping} has fallen ill. Get well soon. Oh and {total} infected so far.",
-            f'"from:{ping} infected" might bring up some interesting results <:thonk:735191246435254273> ({total} infected)',
+            f'"from:{ping} infected" might bring up some interesting results <:rooThink:783079969815265280> ({total} infected)',
         ]
 
         try:
